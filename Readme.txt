@@ -43,7 +43,7 @@ This will install all the necessary dependencies.
 
         python manage.py migrate
 
-4. Download the data files, either for hindi or english dataset from https://drive.google.com/drive/folders/1vyJirorAjWouXbNoI8hyxlTsd5jMZfmq?usp=sharing
+4. Download the data files, either for hindi or english dataset from https://drive.google.com/drive/folders/1k3eUSBngBh0PYAet40iKtCOG2Fdy5PA2?usp=sharing
 
 and paste the .obj files in the data folder(you should paste 2 files, either for hindi or english).
 
