@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to MusicApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bebas Neue', sans-serif;
+            background: url('https://th.bing.com/th/id/R.deaded43cc1fcaec5160193c07d98cdf?rik=5%2bJSCqq7VRC65g&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fXc4ZUA0.png&ehk=z01RL0whnf5M6Q2xaXsz%2f02mHtZUcfAahP5XMxwFdm8%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: left;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 20px 0;
+            background-color: #191414;
+            border-bottom: 2px solid #1DB954;
+        }
+
+        nav a {
+            color: #1DB954;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .text-wrapper {
+            position: absolute;
+            top: 40%;  /* Adjust according to your needs */
+            left: 5%;  /* Maintain alignment with the rest of the content */
+            width: 90%;
+        }
+
+
+        /* Animated text centering */
+        .animated-text {
+            display: block;
+            margin-top: 10px;
+            font-size: 2rem;
+            color: #1DB954;
+            white-space: nowrap;
+        }
+
+        #animated-text-1 {
+            margin-top: 0;  /* No additional top margin for the first line */
+        }
+
+        #animated-text-2 {
+            margin-top: 10px;  /* Reduced space between the lines */
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #191414;;
+            border-top: 2px solid #1DB954;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        footer p {
+            margin: 0;
+            color: #1DB954;
+        }
+
+        /* Developers section styling */
+        .developers {
+            position: absolute;
+            bottom: 50px;  /* Adjust distance from bottom as needed */
+            left: 5%;
+            width: auto;
+            display: flex;
+            justify-content: flex-start;
+            gap: 30px;
+        }
+
+        .developer {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .developer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .developers {
+                flex-direction: column;
+            }
+
+            .developer {
+                margin-bottom: 20px; /* Space between stacked developer images */
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/ai_music/convert/">Convert Image to Music</a>
+        <a href="/ai_music/recommend/">Music Recommendations</a>
+    </nav>
+
+    <div class="text-wrapper">
+        <div class="animated-text" id="animated-text-1"></div>
+        <div class="animated-text" id="animated-text-2"></div>
+    </div>
+
+    <footer>
+        <p>© 2024 MusicApp. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const text1 = "Welcome to New Era of Music...";
+            const text2 = "A place where imagination beats reality...";
+            const animatedTextElement1 = document.querySelector('#animated-text-1');
+            const animatedTextElement2 = document.querySelector('#animated-text-2');
+            let i = 0;
+
+            function typeWriter() {
+                if (i < text1.length || i < text2.length) {
+                    if (i < text1.length) {
+                        animatedTextElement1.innerHTML += text1.charAt(i);
+                    }
+                    if (i < text2.length) {
+                        animatedTextElement2.innerHTML += text2.charAt(i);
+                    }
+                    i++;
+                    setTimeout(typeWriter, 100);
+                }
+            }
+
+            typeWriter();
+        });
+    </script>
+</body>
+</html>
