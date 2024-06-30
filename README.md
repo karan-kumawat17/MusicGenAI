@@ -2,6 +2,11 @@
 
 ## Demonstration
 
+<video src="https://github.com/rayytsn9/ROBOTT/assets/79029536/62f541aa-aa8c-43f5-9ead-4b7a2e0d7c2a" width="300" controls>
+  Your browser does not support the video tag.
+</video>
+
+
 ## Screenshots
 
 ### Homepage
@@ -22,11 +27,7 @@
 
 #### Result
 
-<audio controls>
-  <source src="assets/peace.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
-
+[Listen to the audio](assets/peace.wav)
 
 #### Input
 
@@ -34,10 +35,7 @@
 
 #### Result
 
-<audio controls>
-  <source src="assets/anime.wav" type="audio/wav">
-  Your browser does not support the audio element.
-</audio>
+[Listen to the audio](assets/anime.wav)
 
 ### Image to Song Recommendation
 
