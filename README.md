@@ -28,7 +28,7 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/4e15427a-ded3-4e0a-
 
 
 
-https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/0ee86ebf-0c00-4db6-81f1-abe7438d6536
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/5e00901b-7d5e-4721-99df-45a6f3428dc3
 
 
 
@@ -42,8 +42,7 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/0ee86ebf-0c00-4db6-
 
 
 
-https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/eb93118e-baba-4df9-b92b-9dac9b1dbf06
-
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/c65c1f53-f782-4ef4-af99-4a868e4a2334
 
 
 [Download the same audio](assets/anime.wav)
