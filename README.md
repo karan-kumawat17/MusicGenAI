@@ -2,7 +2,7 @@
 
 ## Demonstration
 
-<video src="https://github.com/CrypticOwl5503/MusicGenAI/blob/main/assets/demo.mp4" width="300" controls>
+<video src="https://raw.githubusercontent.com/CrypticOwl5503/MusicGenAI/main/assets/demo.mp4" width="300" controls>
   Your browser does not support the video tag.
 </video>
 
