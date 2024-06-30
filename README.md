@@ -2,7 +2,7 @@
 
 ## Demonstration
 
-<video src="https://github.com/rayytsn9/ROBOTT/assets/79029536/62f541aa-aa8c-43f5-9ead-4b7a2e0d7c2a" width="300" controls>
+<video src="[https://github.com/rayytsn9/ROBOTT/assets/79029536/62f541aa-aa8c-43f5-9ead-4b7a2e0d7c2a](https://github.com/CrypticOwl5503/MusicGenAI/blob/main/assets/demo.mp4)" width="300" controls>
   Your browser does not support the video tag.
 </video>
 
