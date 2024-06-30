@@ -46,10 +46,7 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/4e15427a-ded3-4e0a-
 
 Badal Pe Paon Hain by Hema Sardesai
 
-<audio controls>
-  <source src="assets/cloud.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
+[Listen to the audio](assets/cloud.mp3)
 
 #### Input
 
@@ -59,10 +56,7 @@ Badal Pe Paon Hain by Hema Sardesai
 
 All I Want For Christmas Is You
 
-<audio controls>
-  <source src="assets/christmas.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
+[Listen to the audio](assets/christmas.mp3)
 
 ## How to Run
 
