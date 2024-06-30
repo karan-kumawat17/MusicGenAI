@@ -26,6 +26,10 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/4e15427a-ded3-4e0a-
 
 #### Result
 
+
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/dea048cb-52a8-4902-a958-cae2060cf638
+
+
 [Listen to the audio](assets/peace.wav)
 
 #### Input
