@@ -1,4 +1,3 @@
-<!-- templates/ai_music/recommend_music_result.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,19 +14,13 @@
             font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             background-color: #121212; /* Spotify's dark background */
         }
 
         .container {
-            max-width: 800px;
+            max-width: 600px; /* Adjust this value to control the width of the column */
             padding: 20px;
-            border-radius: 4px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            overflow-y: auto; /* Enable vertical scrolling */
+            margin: 0 auto;
         }
 
         h1 {
@@ -37,64 +30,17 @@
             margin-bottom: 40px;
         }
 
-        .results-table {
-            color: #fff;
+        #song-embeds {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        iframe {
             width: 100%;
-            margin-bottom: 40px;
-        }
-
-        .results-table th {
-            background-color: #1DB954; /* Spotify green */
-            font-weight: 700;
-        }
-
-        .results-table td {
-            font-weight: 300;
-        }
-
-        .results-table th, .results-table td {
-            padding: 15px;
-            border-bottom: 1px solid #333;
-        }
-
-        .results-table tr:nth-child(even) {
-            background-color: #181818;
-        }
-
-        .results-table tr:hover {
-            background-color: #282828;
-        }
-
-        /* Buttons and Labels */
-        label, button {
-            background-color: #1DB954;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 30px;
-            font-weight: 400;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-
-        label:hover, button:hover {
-            background-color: #1ED760; /* Lighter Spotify green */
-        }
-
-        /* Scrollbars (optional) */
-        ::-webkit-scrollbar {
-            width: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #0e0e0e;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #1DB954; /* Spotify green */
-            border-radius: 20px;
-            border: 3px solid #0e0e0e;
+            height: 80px;
+            border-radius: 12px;
         }
     </style>
 </head>
@@ -102,27 +48,6 @@
     <div class="container">
         <h1>Music Recommendations</h1>
         <div id="song-embeds"></div>
-        <table class="table results-table">
-            <thead>
-                <tr>
-                    <th>Song ID</th>
-                    <th>Artist</th>
-                    <th>Song Title</th>
-                    <th>Song Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for song in results|slice:":5" %}
-                <tr>
-                    <td>{{ song.song_id }}</td>
-                    <td>{{ song.artist }}</td>
-                    <td>{{ song.song_title }}</td>
-                    <td>{{ song.song_score }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-
     </div>
 
     <script>
@@ -134,27 +59,22 @@
                     headers: { 'Authorization': `Bearer ${token}` }
                 });
                 const tracks = response.data.tracks.items;
-                return tracks[0].external_urls.spotify; // Return the Spotify URL of the first track found
+                return tracks[0].external_urls.spotify;
             } catch (error) {
                 console.error('Error fetching song URL:', error);
                 return '';
             }
         }
 
-        async function logSongUrls() {
-            const rows = document.querySelectorAll('.results-table tbody tr');
+        async function displaySongs() {
             const embedContainer = document.getElementById('song-embeds');
-            for (let i = 0; i < Math.min(3, rows.length); i++) { // Only the first 3 rows
-                const artist = rows[i].cells[1].textContent;
-                const title = rows[i].cells[2].textContent;
-                const fullUrl = await fetchSongUrl(artist, title);
-                const trackId = fullUrl.split('/').pop(); // Extracts the last part of the URL
-                console.log(trackId);
+            const songs = {{ results|safe }};
+            for (const song of songs) {
+                const fullUrl = await fetchSongUrl(song.artist, song.song_title);
+                const trackId = fullUrl.split('/').pop();
                 const iframe = document.createElement('iframe');
                 iframe.style.borderRadius = '12px';
                 iframe.src = `https://open.spotify.com/embed/track/${trackId}?utm_source=generator`;
-                iframe.width = '100%';
-                iframe.height = '100';
                 iframe.frameBorder = '0';
                 iframe.allow = 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture';
                 iframe.loading = 'lazy';
@@ -162,7 +82,7 @@
             }
         }
 
-        window.onload = logSongUrls; // Call logSongUrls when the page loads
+        window.onload = displaySongs;
     </script>
 </body>
 </html>
