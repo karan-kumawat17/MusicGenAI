@@ -27,10 +27,12 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/4e15427a-ded3-4e0a-
 #### Result
 
 
-https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/dea048cb-52a8-4902-a958-cae2060cf638
+
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/0ee86ebf-0c00-4db6-81f1-abe7438d6536
 
 
-[Listen to the audio](assets/peace.wav)
+
+[Download the same audio](assets/peace.wav)
 
 #### Input
 
@@ -38,7 +40,13 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/dea048cb-52a8-4902-
 
 #### Result
 
-[Listen to the audio](assets/anime.wav)
+
+
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/eb93118e-baba-4df9-b92b-9dac9b1dbf06
+
+
+
+[Download the same audio](assets/anime.wav)
 
 ### Image to Song Recommendation
 
@@ -50,7 +58,13 @@ https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/dea048cb-52a8-4902-
 
 Badal Pe Paon Hain by Hema Sardesai
 
-[Listen to the audio](assets/cloud.mp3)
+
+
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/ac642463-0d3c-4941-928a-f36b32e599ca
+
+
+
+[Download the same audio](assets/cloud.mp3)
 
 #### Input
 
@@ -60,7 +74,13 @@ Badal Pe Paon Hain by Hema Sardesai
 
 All I Want For Christmas Is You
 
-[Listen to the audio](assets/christmas.mp3)
+
+
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/7852dcfa-535a-4128-a067-6a44168bd4c9
+
+
+
+[Download the same audio](assets/christmas.mp3)
 
 ## How to Run
 
