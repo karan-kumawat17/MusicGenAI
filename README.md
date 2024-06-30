@@ -2,9 +2,8 @@
 
 ## Demonstration
 
-<video src="https://raw.githubusercontent.com/CrypticOwl5503/MusicGenAI/main/assets/demo.mp4" width="300" controls>
-  Your browser does not support the video tag.
-</video>
+https://github.com/CrypticOwl5503/MusicGenAI/assets/92156713/4e15427a-ded3-4e0a-865e-492e87f9b61b
+
 
 
 ## Screenshots
