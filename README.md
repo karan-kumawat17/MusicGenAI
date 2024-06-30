@@ -1,5 +1,72 @@
 # MusicGenAI
 
+## Demonstration
+
+## Screenshots
+
+### Homepage
+
+![Alt text](assets/homepage.png)
+
+### Recommendations
+
+![Alt text](assets/recommendation.png)
+
+## Results
+
+### Image to Audio Generation
+
+#### Input
+
+![Alt text](assets/peace.jpeg)
+
+#### Result
+
+<audio controls>
+  <source src="assets/peace.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+#### Input
+
+![Alt text](assets/anime.jpg)
+
+#### Result
+
+<audio controls>
+  <source src="assets/anime.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+### Image to Song Recommendation
+
+#### Input
+
+![Alt text](assets/cloud.jpg)
+
+#### Result
+
+Badal Pe Paon Hain by Hema Sardesai
+
+<audio controls>
+  <source src="assets/cloud.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+#### Input
+
+![Alt text](assets/christmas.jpg)
+
+#### Result
+
+All I Want For Christmas Is You
+
+<audio controls>
+  <source src="assets/christmas.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
 ## How to Run
 
 After unzipping the folder, follow these steps:
